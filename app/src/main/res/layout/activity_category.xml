@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/categories_bg"
+    tools:context=".CategoryActivity">
+
+    <ImageButton
+        android:id="@+id/btnOpenSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:backgroundTint="#FCFCFC"
+        android:contentDescription="@string/settings"
+        android:src="@drawable/settingss"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck,TouchTargetSizeCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_rugby"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingVertical="12dp"
+        android:text="@string/rugby"
+        android:textSize="20sp"
+        app:backgroundTint="@color/rugby"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintButtonSize" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_football"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingVertical="12dp"
+        android:text="@string/football"
+        android:textSize="20sp"
+        app:backgroundTint="@color/football"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_rugby"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintButtonSize" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_basketball"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingVertical="12dp"
+        android:text="@string/basketball"
+        android:textSize="20sp"
+        app:backgroundTint="@color/basketball"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_football"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_boxing"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="15dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:paddingVertical="12dp"
+        android:text="@string/boxing"
+        android:textSize="20sp"
+        app:backgroundTint="@color/boxing"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_basketball"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintButtonSize" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="190dp"
+        android:layout_height="70dp"
+        android:contentDescription="@string/cv_username"
+        app:layout_constraintBottom_toTopOf="@+id/cardView8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView8"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="20dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_boxing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_welcome"
+                android:layout_width="355dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="@string/welcome_back"
+                android:textAlignment="center"
+                android:textColor="@color/primary"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="VisualLintBounds,TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/please_select_a_category"
+                android:textColor="@color/placeholder"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_welcome"
+                tools:ignore="TextContrastCheck,VisualLintBounds" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView9"
+        android:layout_width="361dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="100dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/btnBasketballHighScore"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/basketball"
+                android:contentDescription="@string/basketballbtn"
+                android:onClick="showBoxingHighScore"
+                android:src="@drawable/highscore"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnBoxingHighScore"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="DuplicateSpeakableTextCheck,ImageContrastCheck" />
+
+            <ImageButton
+                android:id="@+id/btnFootballHighScore"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/football"
+                android:contentDescription="@string/footballbtn"
+                android:onClick="showBoxingHighScore"
+                android:src="@drawable/highscore"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnBasketballHighScore"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnRugbyHighScore"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/rugby"
+                android:contentDescription="@string/rugbybtn"
+                android:onClick="showBoxingHighScore"
+                android:src="@drawable/highscore"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnFootballHighScore"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btnBoxingHighScore"
+                android:layout_width="71dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="@color/boxing"
+                android:contentDescription="@string/boxingbtn"
+                android:onClick="showBoxingHighScore"
+                android:src="@drawable/highscore"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/high_scores"
+                android:textColor="@color/primary"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/btnBasketballHighScore"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Add onClick attribute -->
+
+    <!-- Add onClick attribute -->
+
+    <!-- Add onClick attribute -->
+
+    <!-- Add onClick attribute -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

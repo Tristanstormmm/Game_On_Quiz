@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/questions_bg"
+    android:gravity="start"
+    android:orientation="vertical"
+    tools:context=".FootballQuizActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="100dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/poppins_bold"
+                android:padding="0dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/my_question_is"
+                android:textAlignment="textStart"
+                android:textColor="@color/primary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/rg_options"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <RadioGroup
+
+                android:id="@+id/rg_options"
+                android:layout_width="300dp"
+                android:layout_height="156dp"
+                android:layout_marginBottom="25dp"
+                android:backgroundTint="@color/basketball"
+                app:layout_constraintBottom_toTopOf="@+id/pb_progress"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TextSizeCheck">
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rb_option_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/answer_1"
+                    android:textColor="@color/primary"
+                    android:textColorHighlight="@color/primary"
+                    android:textColorHint="@color/primary"
+                    android:textColorLink="@color/primary"
+                    android:textSize="16sp"
+                    app:buttonTint="@color/boxing" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rb_option_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/answer_2"
+                    android:textColor="@color/primary"
+                    android:textColorHighlight="@color/primary"
+                    android:textColorHint="@color/primary"
+                    android:textColorLink="@color/primary"
+                    android:textSize="16sp"
+                    app:buttonTint="@color/boxing" />
+
+                <com.google.android.material.radiobutton.MaterialRadioButton
+                    android:id="@+id/rb_option_three"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="@string/answer_3"
+                    android:textColor="@color/primary"
+                    android:textColorHighlight="@color/primary"
+                    android:textColorHint="@color/primary"
+                    android:textColorLink="@color/primary"
+                    android:textSize="16sp"
+                    app:buttonTint="@color/boxing" />
+            </RadioGroup>
+
+            <ProgressBar
+                android:id="@+id/pb_progress"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="1"
+
+                android:max="5"
+                android:minHeight="50dp"
+                android:progress="1"
+                android:progressBackgroundTint="@color/placeholder"
+                android:progressTint="@color/boxing"
+                app:layout_constraintBottom_toTopOf="@+id/btn_next"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="85dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:padding="20dp"
+                android:paddingVertical="12dp"
+                android:text="@string/next"
+                android:textSize="24sp"
+                app:backgroundTint="@color/boxing"
+                app:cornerRadius="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/boxing_title"
+                android:textColor="@color/boxing"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toTopOf="@+id/tv_question"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/tvCountdown"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/_10_countdown"
+                android:textColor="@color/boxing"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="TextContrastCheck" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

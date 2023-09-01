@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!--app colours-->
+    <color name="placeholder">#D2D2D2</color>
+    <color name="primary">#191A1F</color>
+    <color name="secondary">#FFFFFF</color>
+    <color name="tertiary">#6A20AE</color>
+
+    <!--category colours-->
+    <color name="rugby">#4486E8</color>
+    <color name="football">#725FC7</color>
+    <color name="basketball">#FDC31A</color>
+    <color name="boxing">#F9423F</color>
+
+
+</resources>
